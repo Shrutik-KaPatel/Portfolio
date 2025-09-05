@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shrutik Patel</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: #0b0c10;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    h1 {
+      font-size: 3em;
+      letter-spacing: 3px;
+      margin-bottom: 20px;
+      z-index: 2;
+    }
+    .icons a {
+      margin: 0 15px;
+      font-size: 40px;
+      color: white;
+      text-decoration: none;
+      transition: transform 0.3s;
+    }
+    .icons a:hover {
+      transform: scale(1.2);
+      color: #66fcf1;
+    }
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+    .icons {
+      z-index: 2;
+    }
+  </style>
+  <!-- Load FontAwesome for icons -->
+  <script src="https://kit.fontawesome.com/a2d9d6a52b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="particles-js"></div>
+  <h1>Shrutik Patel 👨🏽‍💻</h1>
+  <div class="icons">
+    <a href="https://www.linkedin.com/in/shrutik-kapatel?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B0AF%2F3jBmRYKA7FR%2Btb9NPw%3D%3D" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </div>
+
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 80 },
+        "size": { "value": 3 },
+        "color": { "value": "#ff0057" },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#8f00ff",
+          "opacity": 0.6,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 3
+        }
+      }
+    });
+  </script>
+</body>
+</html>
